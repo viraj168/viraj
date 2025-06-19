@@ -4,7 +4,7 @@ This is a news-style website built using GitHub Pages.
 
 ## 🌐 Live Site
 
-👉 [https://viraj123.github.io/news-site](https://viraj168.github.io/viraj/)
+👉 (https://viraj168.github.io/viraj/)
 
 ## 📄 Features
 
