@@ -2,105 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Blog & News Site</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daily News, Blog Articles, and Refer & Earn Offers">
+  <title>Daily News - Blog, News & Refer</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google AdSense Code (Replace with your publisher ID) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+     crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-  <header class="bg-blue-600 text-white p-6 shadow-md text-center">
-    <h1 class="text-3xl font-bold">My Blog & News Portal</h1>
-    <p class="text-sm mt-1">Auto Blog Loader + Image Support</p>
+<body>
+  <header>
+    <h1>🌐 Daily News & Blogs</h1>
+    <nav>
+      <a href="#blogs">Blogs</a>
+      <a href="#news">News</a>
+      <a href="#refer">Refer & Earn</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav class="bg-white shadow p-4 flex justify-center space-x-6">
-    <a href="#blogs" class="hover:text-blue-600">Blogs</a>
-    <a href="#news" class="hover:text-blue-600">News</a>
-    <a href="#links" class="hover:text-blue-600">Reference Links</a>
-  </nav>
-
-  <main class="max-w-4xl mx-auto px-4 py-8">
-
-    <!-- Auto Blog Section -->
-    <section id="blogs" class="mb-12">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">📝 Blog Posts</h2>
-      <div id="blog-container" class="space-y-8"></div>
+  <main>
+    <!-- Blog Section -->
+    <section id="blogs">
+      <h2>📚 Latest Blogs</h2>
+      <article>
+        <h3>How to Prepare for CET 2025</h3>
+        <img src="images/cet-prep.jpg" alt="CET Preparation" />
+        <p>Get expert tips and guidance for CET 2025 success. <a href="blog/cet2025.html">Read more</a>.</p>
+      </article>
     </section>
 
     <!-- News Section -->
-    <section id="news" class="mb-12">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">📰 News Updates</h2>
-
-      <div class="bg-white p-4 rounded shadow mb-4">
-        <h3 class="text-lg font-semibold">CET Registration Opens</h3>
-        <p class="text-sm text-gray-500">June 21, 2025</p>
-        <p class="mt-2">You can now apply for MHT CET 2025 from the official site.</p>
-        <img src="images/news1.jpg" alt="CET" class="mt-2 rounded shadow" />
-      </div>
-    </section>
-
-    <!-- Reference Links -->
-    <section id="links" class="mb-12">
-      <h2 class="text-2xl font-bold mb-4 border-b pb-2">🔗 Useful Reference Links</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li><a href="https://cetcell.mahacet.org/" class="text-blue-600 hover:underline" target="_blank">MHT CET Official Site</a></li>
-        <li><a href="https://viraj168.github.io/" class="text-blue-600 hover:underline" target="_blank">My GitHub Page</a></li>
+    <section id="news">
+      <h2>📰 News</h2>
+      <ul>
+        <li><strong>June 20:</strong> CET 2025 form correction opens.</li>
+        <li><strong>June 15:</strong> New AdSense policy update announced.</li>
       </ul>
     </section>
 
+    <!-- Refer & Earn Section -->
+    <section id="refer">
+      <h2>💸 Refer & Earn</h2>
+      <p>Invite your friends and earn ₹50 for every signup! Help them access useful blog content and study resources.</p>
+      <form action="#" method="POST" class="refer-form">
+        <label for="yourName">Your Name:</label>
+        <input type="text" id="yourName" name="yourName" required />
+
+        <label for="friendEmail">Friend's Email:</label>
+        <input type="email" id="friendEmail" name="friendEmail" required />
+
+        <button type="submit">Send Invite</button>
+      </form>
+      <p>Or share your personal link: <code>https://viraj168.github.io?ref=yourname</code></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p>Email: contact@dailynews.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </section>
   </main>
 
-  <footer class="bg-blue-600 text-white text-center p-4 mt-8">
-    &copy; 2025 Your Name. All rights reserved.
+  <footer>
+    <p>© 2025 Daily News. All rights reserved.</p>
   </footer>
-
-  <script>
-    const blogContainer = document.getElementById('blog-container');
-
-    // List your markdown files here
-    const blogFiles = ['post1.md', 'post2.md']; // inside /blogs/
-
-    blogFiles.forEach(file => {
-      fetch(`blogs/${file}`)
-        .then(res => res.text())
-        .then(md => {
-          const html = marked(md);
-          const article = document.createElement('article');
-          article.className = "bg-white p-4 rounded shadow";
-          article.innerHTML = html;
-          blogContainer.appendChild(article);
-        })
-        .catch(err => {
-          console.error(`Failed to load ${file}:`, err);
-        });
-    });
-  </script>
-
 </body>
 </html>
-<section id="links" class="mb-12">
-  <h2 class="text-2xl font-bold mb-4 border-b pb-2">🔗 Useful Reference Links</h2>
-  
-  <div class="grid md:grid-cols-2 gap-4">
-    
-    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-      <h3 class="text-lg font-semibold mb-1">MHT CET Official Site</h3>
-      <a href="https://cetcell.mahacet.org/" target="_blank" class="text-blue-600 hover:underline">
-        https://cetcell.mahacet.org/
-      </a>
-      <p class="text-sm text-gray-500 mt-1">For exam forms, results, and notifications.</p>
-    </div>
-
-    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-      <h3 class="text-lg font-semibold mb-1">My GitHub Website</h3>
-      <a href="https://viraj168.github.io" target="_blank" class="text-blue-600 hover:underline">
-        https://viraj168.github.io
-      </a>
-      <p class="text-sm text-gray-500 mt-1">Visit my main website hosted on GitHub Pages.</p>
-    </div>
-
-    <!-- Add more links below in the same format -->
-
-  </div>
-</section>
