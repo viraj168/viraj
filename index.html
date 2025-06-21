@@ -3,69 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Daily News, Blog Articles, and Refer & Earn Offers">
-  <title>Daily News - Blog, News & Refer</title>
+  <meta name="description" content="Modern blog and refer & earn platform for students and learners.">
+  <title>DailyNews by Viraj</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
      crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>🌐 Daily News & Blogs</h1>
-    <nav>
-      <a href="#blogs">Blogs</a>
-      <a href="#news">News</a>
-      <a href="#refer">Refer & Earn</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <!-- Blog Section -->
-    <section id="blogs">
-      <h2>📚 Latest Blogs</h2>
-      <article>
-        <h3>How to Prepare for CET 2025</h3>
-        <img src="images/cet-prep.jpg" alt="CET Preparation" />
-        <p>Get expert tips and guidance for CET 2025 success. <a href="blog/cet2025.html">Read more</a>.</p>
-      </article>
-    </section>
+  <!-- Hero Banner -->
+  <section class="hero fade-in">
+    <h1>📰 DailyNews</h1>
+    <p>Smart content for smarter students.</p>
+    <a href="#refer" class="btn">💸 Refer & Earn</a>
+  </section>
 
-    <!-- News Section -->
-    <section id="news">
-      <h2>📰 News</h2>
-      <ul>
-        <li><strong>June 20:</strong> CET 2025 form correction opens.</li>
-        <li><strong>June 15:</strong> New AdSense policy update announced.</li>
-      </ul>
-    </section>
+  <!-- Blog Section -->
+  <section class="section fade-in" id="blogs">
+    <h2>📚 Latest Blogs</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/cet-strategy.jpg" alt="CET Strategy">
+        <h3>Top 10 Tips to Crack CET 2025</h3>
+        <p>Smart preparation strategies for CET success.</p>
+        <a href="blog/cet2025-preparation.html">Read More →</a>
+      </div>
+      <!-- More cards can be added here -->
+    </div>
+  </section>
 
-    <!-- Refer & Earn Section -->
-    <section id="refer">
-      <h2>💸 Refer & Earn</h2>
-      <p>Invite your friends and earn ₹50 for every signup! Help them access useful blog content and study resources.</p>
-      <form action="#" method="POST" class="refer-form">
-        <label for="yourName">Your Name:</label>
-        <input type="text" id="yourName" name="yourName" required />
+  <!-- News Section -->
+  <section class="section fade-in" id="news">
+    <h2>🗞️ News</h2>
+    <ul>
+      <li>✅ CET 2025 Registration Starts from July 1</li>
+      <li>📢 AdSense Approval Rules Updated in 2025</li>
+    </ul>
+  </section>
 
-        <label for="friendEmail">Friend's Email:</label>
-        <input type="email" id="friendEmail" name="friendEmail" required />
+  <!-- Refer & Earn Section -->
+  <section class="section highlight fade-in" id="refer">
+    <h2>💰 Refer & Earn</h2>
+    <p>Share your referral link and earn ₹50 per signup.</p>
+    <input type="text" value="https://viraj168.github.io?ref=yourname" readonly>
+    <button onclick="copyRef()">Copy Link</button>
+    <p id="copyMsg" style="display:none; color: green;">✅ Link copied!</p>
+  </section>
 
-        <button type="submit">Send Invite</button>
-      </form>
-      <p>Or share your personal link: <code>https://viraj168.github.io?ref=yourname</code></p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>📬 Contact</h2>
-      <p>Email: contact@dailynews.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Daily News. All rights reserved.</p>
+    <p>© 2025 Viraj Ambhore. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
