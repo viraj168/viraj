@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
-     crossorigin="anonymous"></script>
-  <meta charset="UTF-8">
-  <title>Daily News</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"> 
-  <meta name="google-adsense-account" content="ca-pub-8421620568174639">
-</head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
-     crossorigin="anonymous"></script>
-<body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog & News Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
 
-  <header><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
-     crossorigin="anonymous"></script>
-    <img src="https://via.placeholder.com/100x100?text=DN" alt="Daily News Logo" class="logo">
-    <h1>Daily News</h1>
-    <p>Your daily source for updates, trends, and tech</p>
-  </header><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
-     crossorigin="anonymous"></script>
+  <header class="bg-blue-600 text-white p-6 shadow-md text-center">
+    <h1 class="text-3xl font-bold">My Blog & News Portal</h1>
+    <p class="text-sm mt-1">Auto Blog Loader + Image Support</p>
+  </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Tech</a>
-    <a href="#">Education</a>
-    <a href="#">Sports</a>
-    <a href="#">About</a>
+  <nav class="bg-white shadow p-4 flex justify-center space-x-6">
+    <a href="#blogs" class="hover:text-blue-600">Blogs</a>
+    <a href="#news" class="hover:text-blue-600">News</a>
+    <a href="#links" class="hover:text-blue-600">Reference Links</a>
   </nav>
 
-  <main>
-    <section class="headline">
-      <h2>🗞️ Breaking: AI Reshaping the Future in 2025</h2>
-      <p>AI is revolutionizing industries from agriculture to gaming. Here's what's changing and how it affects you.</p>
+  <main class="max-w-4xl mx-auto px-4 py-8">
+
+    <!-- Auto Blog Section -->
+    <section id="blogs" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">📝 Blog Posts</h2>
+      <div id="blog-container" class="space-y-8"></div>
     </section>
 
-    <section class="articles">
+    <!-- News Section -->
+    <section id="news" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">📰 News Updates</h2>
 
-      <div class="article">
-        <img src="https://via.placeholder.com/300x160?text=Agri-Tech" alt="Agri Tech">
-        <h3><a href="article1.html">🌱 Agri-Tech Tools Helping Indian Farmers</a></h3>
-        <p>Smart irrigation and sensors are boosting yields in Maharashtra and beyond.</p>
+      <div class="bg-white p-4 rounded shadow mb-4">
+        <h3 class="text-lg font-semibold">CET Registration Opens</h3>
+        <p class="text-sm text-gray-500">June 21, 2025</p>
+        <p class="mt-2">You can now apply for MHT CET 2025 from the official site.</p>
+        <img src="images/news1.jpg" alt="CET" class="mt-2 rounded shadow" />
       </div>
-
-      <div class="article">
-        <img src="https://via.placeholder.com/300x160?text=Smartphones" alt="Smartphones">
-        <h3><a href="article5.html">📱 Best Smartphones Under ₹15,000 (2025)</a></h3>
-        <p>Top value picks for gamers, photographers, and everyday users.</p>
-      </div> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
-     crossorigin="anonymous"></script>
-
-
-      <div class="article">
-        <img src="https://via.placeholder.com/300x160?text=Education" alt="CET">
-        <h3><a href="article3.html">🎓 CET 2025: New Syllabus, Smart Tips</a></h3>
-        <p>
-      </div>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
-     crossorigin="anonymous"></script>
-
-
-      <div class="article">
-        <img src="https://via.placeholder.com/300x160?text=Cricket" alt="India Cricket">
-        <h3><a href="article4.html">🏏 India Defeats Australia in ODI Series</a></h3>
-        <p>Key performances, match summary, and what’s next for Team India.</p>
-      </div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8421620568174639"
-     crossorigin="anonymous"></script>
-
-
     </section>
+
+    <!-- Reference Links -->
+    <section id="links" class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b pb-2">🔗 Useful Reference Links</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://cetcell.mahacet.org/" class="text-blue-600 hover:underline" target="_blank">MHT CET Official Site</a></li>
+        <li><a href="https://viraj168.github.io/" class="text-blue-600 hover:underline" target="_blank">My GitHub Page</a></li>
+      </ul>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 Daily News | Powered by GitHub Pages</p>
+  <footer class="bg-blue-600 text-white text-center p-4 mt-8">
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
+
+  <script>
+    const blogContainer = document.getElementById('blog-container');
+
+    // List your markdown files here
+    const blogFiles = ['post1.md', 'post2.md']; // inside /blogs/
+
+    blogFiles.forEach(file => {
+      fetch(`blogs/${file}`)
+        .then(res => res.text())
+        .then(md => {
+          const html = marked(md);
+          const article = document.createElement('article');
+          article.className = "bg-white p-4 rounded shadow";
+          article.innerHTML = html;
+          blogContainer.appendChild(article);
+        })
+        .catch(err => {
+          console.error(`Failed to load ${file}:`, err);
+        });
+    });
+  </script>
 
 </body>
 </html>
