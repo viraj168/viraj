@@ -108,3 +108,21 @@ footer {
     transform: translateY(0);
   }
 }
+#refer .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+#refer .card:hover {
+  transform: translateY(-5px);
+}
+
+#refer img {
+  height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
