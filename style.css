@@ -1,64 +1,110 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #ffffff;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background: #f7fafc;
+  color: #1a202c;
 }
-header {
-  background-color: #0e4d92;
-  color: #fff;
-  padding: 1rem 0;
+
+.hero {
   text-align: center;
-}
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-}
-main {
-  padding: 20px;
-}
-section {
-  margin-bottom: 40px;
-}
-h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
-}
-footer {
-  background: #f1f1f1;
-  text-align: center;
-  padding: 10px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-.refer-form {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-.refer-form label {
-  margin-top: 10px;
-}
-.refer-form input {
-  padding: 8px;
-  font-size: 1rem;
-}
-.refer-form button {
-  margin-top: 15px;
-  background-color: #0e4d92;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #2563eb, #1e40af);
   color: white;
-  border: none;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  color: #1e40af;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.highlight {
+  background: #fff7ed;
+  text-align: center;
+  border-top: 3px solid orange;
+}
+
+.highlight input {
+  margin: 10px 0;
   padding: 10px;
-  cursor: pointer;
+  width: 80%;
+  border: 1px solid #ddd;
   border-radius: 5px;
 }
-.refer-form button:hover {
-  background-color: #09396e;
+
+.highlight button {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #edf2f7;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
